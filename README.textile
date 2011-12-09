@@ -29,7 +29,8 @@ var mapi = require('../lib/matrix-api');
     mapi.setPassword(API_PASSWORD);
     
     mapi.createAsset(
-        ...
+
+p.  ...
 
 h2. Testing
 
