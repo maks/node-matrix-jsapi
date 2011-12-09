@@ -1,0 +1,19 @@
+{
+    "name": "node-matrix-jsapi",
+    "version" : "0.0.1",
+    "description": "Squiz Matrix JSAPI ported to Nodejs",
+    "author": {
+        "name": "Maksim Lin",
+        "email": "maks@manichord.com",
+        "url": "http://manichord.com"
+    },
+    "main": "matrix-jsapi.js",
+    "dependencies": {
+        "request": ">=2.1.1",
+        "mkslogger" : ""
+    },
+    "devDependencies": {
+        "vows": ""
+    },
+  "engine": "node 0.6.x"
+}

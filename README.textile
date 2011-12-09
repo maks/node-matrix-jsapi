@@ -1,0 +1,16 @@
+h1. Squiz Matrix JSAPI ported to Nodejs
+
+h2. Author: Maksim Lin <maks@manichord.com>
+
+h2. Usage
+
+TODO. For now please see tests.
+
+h2. Testing
+
+Prior to running the test cases please make sure you have created JSAPI asset in your Matrix instance and entered its API Key and URL into the test file. You will also need to make sure that you have:
+
+* Enabled the Matrix setting: Process PHP Credentials: YES
+* Have a Matrix Backend user asset created with permissions to the parent asset under which you will create the test assets
+
+
