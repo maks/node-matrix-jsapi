@@ -18,19 +18,17 @@ there are extra functions that need to be called to set the URL, matrix username
 password prior to any calls being made to the API.
 
 e.g.
-
-bc.
-
-var mapi = require('../lib/matrix-api');
-
-    mapi.setApiKey(API_KEY);
-    mapi.setApiUrl(API_URL);
-    
-    mapi.setUsername(API_USER);
-    mapi.setPassword(API_PASSWORD);
-    
-    mapi.createAsset(
-        ...
+bc. var mapi = require('../lib/matrix-api');
+bc. 
+bc. 
+bc.     mapi.setApiKey(API_KEY);
+bc.     mapi.setApiUrl(API_URL);
+bc.     
+bc.     mapi.setUsername(API_USER);
+bc.     mapi.setPassword(API_PASSWORD);
+bc.     
+bc.     mapi.createAsset(
+bc.        ...
 
 h2. Testing
 
