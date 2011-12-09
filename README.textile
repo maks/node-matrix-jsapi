@@ -19,18 +19,13 @@ password prior to any calls being made to the API.
 
 e.g.
 
-bc..
-var mapi = require('../lib/matrix-api');
-
+bc. var mapi = require('../lib/matrix-api');
     mapi.setApiKey(API_KEY);
     mapi.setApiUrl(API_URL);
-    
     mapi.setUsername(API_USER);
     mapi.setPassword(API_PASSWORD);
-    
     mapi.createAsset(
-
-p.  ...
+    etc...
 
 h2. Testing
 
