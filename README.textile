@@ -2,15 +2,41 @@ h1. Squiz Matrix JSAPI ported to Nodejs
 
 h2. Author: Maksim Lin <maks@manichord.com>
 
+h2. Installation
+
+The easiest way is to install using NPM:
+
+bc. npm install node-matrix-jsapi
+
 h2. Usage
 
-TODO. For now please see tests.
+See the "Squiz Matrix manual":http://manuals.matrix.squizsuite.net/web-services/chapters/javascript-api
+for information regarding using the JSAPI.
+
+In addition to the function call to set the API Key described in the manual above, 
+there are extra functions that need to be called to set the URL, matrix username and
+password prior to any calls being made to the API.
+
+e.g.
+
+bc.
+
+var mapi = require('../lib/matrix-api');
+
+    mapi.setApiKey(API_KEY);
+    mapi.setApiUrl(API_URL);
+    
+    mapi.setUsername(API_USER);
+    mapi.setPassword(API_PASSWORD);
+    
+    mapi.createAsset(
+        ...
 
 h2. Testing
 
 Prior to running the test cases please make sure you have created JSAPI asset in your Matrix instance and entered its API Key and URL into the test file. You will also need to make sure that you have:
 
-* Enabled the Matrix setting: Process PHP Credentials: YES
+* Enabled the Matrix setting: _Process PHP Credentials:_ YES
 * Have a Matrix Backend user asset created with permissions to the parent asset under which you will create the test assets
 
 
