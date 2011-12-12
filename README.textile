@@ -27,6 +27,17 @@ bc. var mapi = require('../lib/matrix-api');
     mapi.createAsset(
     etc...
 
+
+Please note that the callback function supplied to all the methods will return an error (if any) as the first parameter,
+and the results in the second. This is *DIFFERENT* from the behaviour of the original JSAPI within Matrix but better matches
+the conventions used in NodeJS.
+
+e.g.
+
+bc.  mapi.createAsset(..., function(err, result) { log.console('created AssetID:'+result.id);} );
+
+
+
 h2. Testing
 
 Prior to running the test cases please make sure you have created JSAPI asset in your Matrix instance and entered its API Key and URL into the test file. You will also need to make sure that you have:
