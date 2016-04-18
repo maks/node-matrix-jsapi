@@ -45,4 +45,6 @@ Prior to running the test cases please make sure you have created JSAPI asset in
 * Enabled the Matrix setting: _Process PHP Credentials:_ YES
 * Have a Matrix Backend user asset created with permissions to the parent asset under which you will create the test assets
 
+h2. License
 
+GPL v2
